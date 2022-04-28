@@ -10,9 +10,9 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    String title;
-    String date;
-    double value;
+    public String title;
+    public String date;
+    public double value;
 
     public Transaction() {
 

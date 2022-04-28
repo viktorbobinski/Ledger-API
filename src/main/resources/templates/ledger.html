@@ -6,6 +6,11 @@
 </head>
 <body>
 <p th:text="'Balance is: ' + ${balance} + '!'" />
-<p th:text="'Transactions: ' + ${transactions} + '!'" />
+<tr th:each="transaction: ${transactions}">
+  <td th:text="${transaction.title}" />
+  <td th:text="${transaction.value}" />
+  <td th:text="${transaction.date}" />
+  <br />
+</tr>
 </body>
 </html>
