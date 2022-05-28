@@ -14,4 +14,4 @@ Java API is a ledger between 2 people. +/- values posted as @RequestParam which 
 
 
 #### Notes
-- W Controller'ach nie używam @RestController, bo w argumencie metody przyjmuję @RequestParam zamiast @RequestBody, a zamiast @ResponseBody zwracam Template generowany przez Spring wykorzystując framework Thymeleaf.
+- W Controller'ach używam @Controller, a nie @RestController, bo w argumencie metody przyjmuję @RequestParam zamiast @RequestBody, a zamiast @ResponseBody zwracam Template generowany przez Spring wykorzystując framework Thymeleaf.
